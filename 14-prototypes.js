@@ -49,7 +49,18 @@ Array.prototype.last = function () {
 console.log([1, 2, 3].last());
 console.log(["Ani", "hitesh", "Akash"].last());
 
-Array.prototype.myMap = function () {
+const users = [
+  {name: "Kunal", age: 20},
+  {name: "Rahul", age: 22},
+];
+
+console.log(
+  users.forEach((user, index) => {
+    console.log(index, user.name);
+  }),
+);
+
+Array.prototype.myMap = function (cb) {
   let result = [];
 
   for (let i = 0; i < this.length; i++) {
@@ -60,3 +71,38 @@ Array.prototype.myMap = function () {
 };
 
 console.log([1, 2, 3].myMap());
+
+Array.prototype.myforEach = function (cb) {
+  for (let i = 0; i < this.length; i++) {
+    console.log(this[i]);
+  }
+};
+
+console.log(
+  [
+    {name: "Kunal", age: 20},
+    {name: "Rahul", age: 22},
+  ].myforEach(),
+);
+
+
+let org = { 
+  k1 : "a" , 
+  k2 : "b" , 
+  k2 : "v"
+}
+
+let clone = {}
+
+for (const key in org) {
+  console.log(org[key]);
+  
+  // console.log(key);
+  
+    clone[key] = org[key]
+}
+
+console.log(clone);
+
+
+Object.assign()
