@@ -48,3 +48,18 @@ async function getProduct() {
     console.log(error);
   }
 }
+
+// let fruits = ["apple", "banana"];
+// console.log("Before unshift", fruits);
+// fruits.unshift("orange");
+// console.log("After unshift", fruits);
+
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+// const multpleOfTwo = numbers.filter((num) => num%2 === 0)
+
+// console.log(multpleOfTwo);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// numbers.forEach((num) => console.log(`Multiple ${num} * 2 = `, num * 2))
