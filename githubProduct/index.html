@@ -42,7 +42,12 @@
         <h2>User Profile</h2>
 
         <div class="profile-card">
-          <img class="avatar" id="avatar" src="" alt="User Avatar" />
+          <img
+            class="avatar"
+            id="avatar"
+            src="https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg"
+            alt="User Avatar"
+          />
 
           <div class="profile-info">
             <h3 id="userProfile">Username</h3>
@@ -51,7 +56,7 @@
             <p id="loca">Location: User location goes here...</p>
 
             <div class="stats">
-              <p id="repos">Repos: 0</p>
+              <p class="repos">Repositories: 0</p>
               <p id="followers">Followers: 0</p>
               <p id="following">Following: 0</p>
             </div>
@@ -62,7 +67,7 @@
       <!-- REPOSITORIES -->
       <section class="repo-section">
         <div class="repo-header">
-          <h2>Repositories : 0</h2>
+          <h2 class="repos">Repositories : 0</h2>
 
           <input
             class="repo-search"
@@ -71,14 +76,12 @@
           />
         </div>
 
-        <div class="repo-container">
-          <div class="repo-card">
-            <h3>Repository Name</h3>
-
-            <p>Description: Repository description goes here...</p>
-
-            <p class="repo-meta">Stars: 0 | Forks: 0 | Language: N/A</p>
-          </div>
+        <div id="repo-container">
+              <div class="repo-card">
+      <h3>No Repository Found</h3>
+      <p>Description: Repository description goes here...</p>
+      <p class="repo-meta">Stars: 0 | Forks: 0 | Language: N/A</p>
+    </div>
         </div>
       </section>
     </main>
