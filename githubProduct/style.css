@@ -156,10 +156,11 @@ color:#e6edf3;
 
 /* REPO GRID */
 
-.repo-container{
+#repo-container{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:20px;
+
 }
 
 .repo-card{
